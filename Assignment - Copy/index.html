@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<!--
+Template Name: Yeinydd
+Author: <a href="https://www.os-templates.com/">OS Templates</a>
+Author URI: https://www.os-templates.com/
+Copyright: OS-Templates.com
+Licence: Free to use under our free template licence terms
+Licence URI: https://www.os-templates.com/template-terms
+-->
+<html lang="">
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+<head>
+<title>ALOHA CREATIC</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+  .col-container {
+    display: table;
+    width: 100%;
+  }
+  .col {
+    display: table-cell;
+    padding: 80px;
+  }
+  .login-trigger {
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(to bottom right, #B05574, #F87E7B);
+  padding: 15px 30px;
+  border-radius: 30px;
+  position: relative; 
+  top: 50%;
+}
+
+/*Modal*/
+h4 {
+  font-weight: bold;
+  color: #fff;
+}
+.close {
+  color: #fff;
+  transform: scale(1.2)
+}
+.modal-content {
+  font-weight: bold;
+  background: linear-gradient(to bottom right,#F87E7B,#B05574);
+}
+.form-control {
+  margin: 1em 0;
+}
+.form-control:hover, .form-control:focus {
+  box-shadow: none;  
+  border-color: #fff;
+}
+.username, .password {
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  border-bottom: 2px solid #eee;
+  padding-left: 0;
+  font-weight: normal;
+  background: transparent;  
+}
+.form-control::-webkit-input-placeholder {
+  color: #eee;  
+}
+.form-control:focus::-webkit-input-placeholder {
+  font-weight: bold;
+  color: #fff;
+}
+.login {
+  padding: 6px 20px;
+  border-radius: 20px;
+  background: none;
+  border: 2px solid #FAB87F;
+  color: #FAB87F;
+  font-weight: bold;
+  transition: all .5s;
+  margin-top: 1em;
+}
+.login:hover {
+  background: #FAB87F;
+  color: #fff;
+}
+  </style>
+</head>
+
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- Top Background Image Wrapper -->
+<div id="login" class="modal fade" role="dialog" style="z-index: 100000;" >
+  <div class="modal-dialog " >
+    
+    <div class="modal-content">
+      <div class="modal-body">
+        <button data-dismiss="modal" class="close">&times;</button>
+        <h4>Book an Appoinment</h4>
+        <form>
+          <input type="text" name="username" class="username form-control" placeholder="First name"/>
+          <input type="text" name="name" class="username form-control" placeholder="Last name"/>
+          <input type="text" name="email" class="username form-control" placeholder="Email"/>
+          <input type="text" name="Phn" class="username form-control" placeholder="Phone"/>
+          <input class="btn login" type="submit" value="Login" />
+        </form>
+      </div>
+    </div>
+  </div>  
+</div>
+<div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true" > 
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="background-color: AntiqueWhite;">
+      
+      <div class="col" style="background-image: url(images/demo/Cards/A.jpg) ;">
+        <div class="card" style="width: 18rem;">
+         <div class="card-body">
+           <h2 class="card-title" style="font-weight: 700;">San Jose, CA</h2>
+           <p class="card-text">
+
+               02 Karine Throughway<br>
+                Apt. 647
+                +1 234 567 890
+            </p>
+           <a href="#" class="btn btn-primary"class="btn btn-default btn-rounded mb-4" class="login-trigger" data-target="#login" data-toggle="modal" >Select location</a>
+         </div>
+       </div>
+       </div>
+      
+        <div class="col" style="background-image:url(images/demo/Cards/B.jpg);">
+         <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h2 class="card-title" style="font-weight: 700;">Cupertino,CA</h2>
+            <p class="card-text">
+              02 Karine Throughway<br>
+                Apt. 647
+                +1 234 567 890
+
+
+            </p>
+            <a href="#" class="btn btn-primary" class="btn btn-default btn-rounded mb-4" class="login-trigger" data-target="#login" data-toggle="modal" >Select location</a>
+          </div>
+        </div>
+        </div>
+      
+        <div class="col" style="background-image: url(images/demo/Cards/C.jpg);">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h2 class="card-title" style="font-weight: 700;">San Francisco,CA</h2>
+              <p class="card-text">
+                02 Karine Throughway<br>
+                Apt. 647
+                +1 234 567 890
+
+
+            </p><a href="#" class="btn btn-primary" class="btn btn-default btn-rounded mb-4" class="login-trigger" data-target="#login" data-toggle="modal" >Select location</a>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bgded overlay" style="background-image:url('images/demo/backgrounds/010.jpg');"> 
+  <!-- ################################################################################################ -->
+  <div class="wrapper row1">
+    <header id="header" class="hoc clear"> 
+      <!-- ################################################################################################ -->
+      <div id="logo" class="fl_left" style="background-color: aliceblue;">
+        <a href="index.html"><h1 style="color: orange;"> ALOHA</h1><h1>CREATIC</h1></a>
+      </div>
+      <!-- ################################################################################################ -->
+      <nav id="mainav" class="fl_right">
+        <ul class="clear">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a class="" href="images/demo/61.jpg">ABOUT</a>
+          
+          </li>
+          <li><a class="" href="images/demo/60.jpg">GALLERY</a>
+            <ul>
+              
+            
+                 
+          </li>
+              <li><a href="#">Level 2</a></li>
+            </ul>
+          </li>
+          <li><a href="images/demo/63.jpg">SPECIALTY</a></li>
+          <li><a href="images/demo/64.jpg">REVIEWS</a></li>
+          <li><a href="images/demo/65.jpg">CONTACT</a></li>
+          <li style="background-color: orange; color: black;"><a href="#" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalLoginForm">BOOK ONLINE</a></li><br>
+          <li style="float: right;"><a href="#"  class="fa fa-phone">522-182-5024</a></li>
+        </ul>
+      </nav>
+      <!-- ################################################################################################ -->
+    </header>
+  </div>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <div id="pageintro" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <article>
+      <h3 class="heading"></h3>
+      <p></p>
+      <footer>
+        <form class="group" method="post" action="#">
+          <fieldset>
+           
+          </fieldset>
+        </form>
+      </footer>
+
+    </article>
+    <article>
+      <h3 class="heading">Dr.Minerva Abbott</h3>
+      <p><h2>General and Cosmetic Dentistry
+        San Jose, CA<h2></p>
+      <footer>
+        <form class="group" method="post" action="#">
+          
+        </form>
+      </footer>
+    </article>
+    <!-- ################################################################################################ -->
+  </div>
+  <!-- ################################################################################################ -->
+</div>
+<!-- End Top Background Image Wrapper -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row2">
+  <section id="references" class="hoc container clear"> 
+    <!-- ################################################################################################ -->
+    
+    <ul class="nospace group ref-img">
+      <li class="one_third"><a class="imgover" href="#"><img src="images/demo/10.jpg" alt=""></a></li>
+      <li class="one_third"><a class="imgover" href="#"><img src="images/demo/11.jpg" alt=""></a></li>
+      <li class="one_third"><a class="imgover" href="#"><img src="images/demo/12.jpg" alt=""></a></li>
+      
+      
+      
+    </ul>
+    
+    <!-- ################################################################################################ -->
+  </section>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+
+
+<div class="wrapper row3">
+  <section class="hoc container clear"> 
+    <!-- ################################################################################################ -->
+    <div class="sectiontitle">
+      <h6 class="heading">Blog Update</h6>
+      <p></p>
+    </div>
+    <div id="latest" class="group">
+      <article class="one_third first"><a class="imgover" href="#"><img src="images/demo/40.jpg" alt=""></a>
+        <div class="excerpt">
+          
+          <h6 class="heading" style="color:orange;">Blog title goes here</h6>
+          <ul class="meta">
+            <li><i class="fas fa-user rgtspace-5"></i> <a href="#">Admin</a></li>
+            <li><i class="fas fa-tags rgtspace-5"></i> <a href="#">Tag 1</a>, <a href="#">Tag 2</a></li>
+          </ul>
+          <p>Prevention is truly your best investment. Dental 
+            Cleanings, Exams, Sealants, Fluoride Varnish and 
+            Nightguards maintain a healthy and..</p>
+          
+        </div>
+      </article>
+      <article class="one_third"><a class="imgover" href="#"><img src="images/demo/41.jpg" alt=""></a>
+        <div class="excerpt">
+        
+          <h6 class="heading" style="color:orange;">Blog title goes here</h6>
+          <ul class="meta">
+            <li><i class="fas fa-user rgtspace-5"></i> <a href="#">Admin</a></li>
+            <li><i class="fas fa-tags rgtspace-5"></i> <a href="#">Tag 1</a>, <a href="#">Tag 2</a></li>
+          </ul>
+          <p>Prevention is truly your best investment. Dental 
+            Cleanings, Exams, Sealants, Fluoride Varnish and 
+            Nightguards maintain a healthy and..</p>
+        
+        </div>
+      </article>
+      <article class="one_third"><a class="imgover" href="#"><img src="images/demo/42.jpg" alt=""></a>
+        <div class="excerpt">
+          
+          <h6 class="heading" style="color:orange;">Blog title goes here</h6>
+          <ul class="meta">
+            <li><i class="fas fa-user rgtspace-5"></i> <a href="#">Admin</a></li>
+            <li><i class="fas fa-tags rgtspace-5"></i> <a href="#">Tag 1</a>, <a href="#">Tag 2</a></li>
+          </ul>
+          <p>Prevention is truly your best investment. Dental 
+            Cleanings, Exams, Sealants, Fluoride Varnish and 
+            Nightguards maintain a healthy and..</p>
+          
+        </div>
+      </article>
+      <article class="one_third"><a class="imgover" href="#"><img src="images/demo/50.jpg" style="width: 100px;" alt=""></a>
+        <div class="excerpt">
+          
+          <h6 class="heading">Blog title goes here 
+                             lorem ipsum dolor 
+                             sit amet..</h6>
+          <ul class="meta">
+            <li><i class="fas fa-user rgtspace-5"></i> <a href="#">Admin</a></li>
+            <li><i class="fas fa-tags rgtspace-5"></i> <a href="#">Tag 1</a>, <a href="#">Tag 2</a></li>
+          </ul>
+          <p></p>
+          
+       </div>
+      </article>
+      <article class="one_third"><a class="imgover" href="#"><img src="images/demo/51.jpg" style="width: 100px;" alt=""></a>
+      <div class="excerpt">
+        
+        <h6 class="heading">Blog title goes here 
+          lorem ipsum dolor 
+          sit amet..</h6>
+        <ul class="meta">
+          <li><i class="fas fa-user rgtspace-5"></i> <a href="#">Admin</a></li>
+          <li><i class="fas fa-tags rgtspace-5"></i> <a href="#">Tag 1</a>, <a href="#">Tag 2</a></li>
+        </ul>
+        <p></p>
+        
+      </div>
+    </article>
+   
+    
+    <!-- ################################################################################################ -->
+  </section>
+</div>
+<!-- ################################################################################################ -->
+
+
+
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="images/demo/20.jpg"style="width: 10000px;" alt="First slide">
+    </div>
+    
+    
+    
+  </div>
+</div>
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="images/demo/21.jpg" style="width: 10000px;" alt="First slide">
+    </div>
+    
+    
+    
+  </div>
+</div>
+
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="images/demo/22.jpg" style="width: 10000px;" alt="First slide">
+    </div>
+    
+    
+    
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
